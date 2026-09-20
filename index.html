@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Steven Pratama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">STEVEN PRATAMA</div>
+        
+        <button class="hamburger" id="hamburger-btn">
+            &#9776;
+        </button>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#riwayat">Riwayat</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="landing-page">
+        <div class="landing-text">
+            <h1>Hi, I'm <br><span class="highlight">Steven Pratama</span></h1>
+            <h2>535250154</h2>
+            <p>Selamat datang di portofolio saya. Saya adalah mahasiswa Teknik Informatika di Universitas Tarumanagara yang belajar dalam pengembangan Software Development. Saya sangat menyukai tantangan dalam memecahkan masalah logika dan merancang antarmuka web yang interaktif.</p>
+        </div>
+        
+        <div class="landing-image">
+            <img src="steven.jpeg" alt="Foto Profil Steven">
+        </div>
+    </header>
+
+    <section id="riwayat" class="section-container">
+        <h2>Riwayat Pendidikan & Organisasi</h2>
+        
+        <div class="riwayat-list">
+            <div class="riwayat-item">
+                <h3>Sekolah Dasar (SD)</h3>
+                <p><strong>SD Xaverius Kotabumi</strong> </p>
+                <p><strong>Ekstrakulikuler:</strong></p>
+                <ul>
+                    <li>Melukis</li>
+                    <li>Mading</li>
+                    <li>Badminton</li>
+                </ul>
+            </div>
+
+            <div class="riwayat-item">
+                <h3>Sekolah Menengah Pertama (SMP)</h3>
+                <p><strong>SMP Xaverius Kotabumi</strong></p>
+                <p><strong>Ekstrakulikuler:</strong></p>
+                <ul>
+                    <li>Life Skill</li>
+                    <li>Computer Design</li>
+                    <li>Cinematography</li>
+                </ul>
+            </div>
+
+            <div class="riwayat-item">
+                <h3>Sekolah Menengah Atas (SMA)</h3>
+                <p><strong>SMA Negeri 3 Kotabumi</strong></p>
+                <p><strong>Pengalaman Organisasi:</strong></p>
+                <ul>
+                    <li>Mading</li>
+                    <li>Science Center</li>
+                    <li>Karya Ilmiah Siswa</li>
+                    <li>English Teenager Club</li>
+                </ul>
+            </div>
+
+            <div class="riwayat-item">
+                <h3>Perguruan Tinggi</h3>
+                <p><strong>Universitas Tarumanagara</strong></p>
+                <p><strong>Pengalaman Organisasi:</strong></p>
+                <ul>
+                    <li>Dharmayana</li>
+                    <li><strong>Proker:</strong>
+                        <ul>
+                            <li>Berita Dharmayana</li>
+                            <li>Dharmayana Buddhist Festival</li>
+                            <li>Dharmayana Welcoming Party</li>
+                            <li>Dharmadhista</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-container">
+        <h2>Bahasa & Teknologi</h2>
+        <div class="skills-container">
+            <p>Berikut adalah beberapa bahasa pemrograman dan teknologi yang telah saya pelajari dan gunakan dalam mengembangkan berbagai proyek aplikasi maupun web:</p>
+            <div class="skill-tags">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">MySQL</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-container">
+        <h2 class="section-title">Project yang Telah Dikerjakan</h2>
+        
+        <div class="project-list">
+            <div class="project-item">
+                <img src="foto-backend.png" alt="Ilustrasi Backend" class="project-img">
+                <h3>Backend Web Application</h3>
+                <p>Mengembangkan sistem backend mandiri yang terinspirasi dari portal akademik LINTAR. Proyek ini mencakup perancangan struktur database, pengelolaan keamanan, dan pemrosesan data mahasiswa secara terstruktur untuk memastikan sistem bekerja dengan aman dan efisien.</p>
+            </div>
+            
+            <div class="project-item">
+                <img src="foto-aljabar.jpg" alt="Ilustrasi Aljabar Linear" class="project-img">
+                <h3>Implementasi Aljabar Linear</h3>
+                <p>Membangun program untuk memecahkan perhitungan matriks dan operasi vektor. Proyek ini mengimplementasikan konsep matematika diskrit ke dalam kode program untuk menyelesaikan masalah komputasional dasar secara otomatis dan akurat.</p>
+            </div>
+            
+            <div class="project-item">
+                <img src="foto-data-structure.png" alt="Ilustrasi Struktur Data" class="project-img">
+                <h3>Algoritma Dijkstra (Data Structure)</h3>
+                <p>Menerapkan algoritma pencarian rute terpendek (Dijkstra's Algorithm) menggunakan struktur data Graf. Proyek ini secara spesifik memetakan koordinat dan mencari rute paling efisien antar titik lokasi objek ATM yang terinspirasi dari map Grand Theft Auto V.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Steven Pratama - 535250154. Dibuat untuk Tugas Front-End.</p>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
